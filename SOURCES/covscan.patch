@@ -1,0 +1,12 @@
+diff -up libappindicator-12.10.0/src/app-indicator.c.covscan libappindicator-12.10.0/src/app-indicator.c
+--- libappindicator-12.10.0/src/app-indicator.c.covscan	2018-02-26 07:55:51.677902536 +0100
++++ libappindicator-12.10.0/src/app-indicator.c	2018-02-26 07:56:02.141836701 +0100
+@@ -1899,7 +1899,7 @@ app_indicator_set_attention_icon_full (A
+ 			g_free (self->priv->att_accessible_desc);
+ 		}
+ 
+-		self->priv->att_accessible_desc = g_strdup(icon_name);
++		self->priv->att_accessible_desc = g_strdup(icon_desc);
+ 		changed = TRUE;
+ 	}
+ 
